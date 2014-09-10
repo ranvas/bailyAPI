@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f9381bf4-cb07-4f0d-9716-2d753928ff39" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://stosha:9999/ServiceModelSamples/Service" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="23911ca6-1819-4b72-b0a3-91579ee164d9" SourceId="1" SourceUrl="http://stosha:9999/ServiceModelSamples/Service?xsd=xsd1" />
+    <MetadataFile FileName="TravelShopService.wsdl" MetadataType="Wsdl" ID="65d1543a-b78d-4aef-b7e0-2f81efa7afc2" SourceId="1" SourceUrl="http://stosha:9999/ServiceModelSamples/Service?wsdl" />
+    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="b9a7da4f-9d97-4aad-8a44-92f578210cb8" SourceId="1" SourceUrl="http://stosha:9999/ServiceModelSamples/Service?xsd=xsd2" />
+    <MetadataFile FileName="Service2.xsd" MetadataType="Schema" ID="e5cfe0bb-9d48-486c-96f0-b80c3c0bf6a1" SourceId="1" SourceUrl="http://stosha:9999/ServiceModelSamples/Service?xsd=xsd5" />
+    <MetadataFile FileName="Service3.xsd" MetadataType="Schema" ID="96db76ed-1101-4987-b9b9-13aaae2ef5e1" SourceId="1" SourceUrl="http://stosha:9999/ServiceModelSamples/Service?xsd=xsd0" />
+    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="9355b468-cb1a-4666-b0a2-188cfd7a79c0" SourceId="1" SourceUrl="http://stosha:9999/ServiceModelSamples/Service?wsdl=wsdl0" />
+    <MetadataFile FileName="Service4.xsd" MetadataType="Schema" ID="32addc50-090b-409d-92c5-1f8127ff1325" SourceId="1" SourceUrl="http://stosha:9999/ServiceModelSamples/Service?xsd=xsd3" />
+    <MetadataFile FileName="Service.disco" MetadataType="Disco" ID="83986237-c46c-4bb8-a932-f4f1e18dd7e6" SourceId="1" SourceUrl="http://stosha:9999/ServiceModelSamples/Service?disco" />
+    <MetadataFile FileName="Service5.xsd" MetadataType="Schema" ID="7be1b4ee-4011-4d9b-b1e8-ecd091700092" SourceId="1" SourceUrl="http://stosha:9999/ServiceModelSamples/Service?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  <Functions>
+    <getFunctions type="text/xml" revision="1">
+      <inparam type="string" order="1">function</inparam>
+      <description>Function returns xml signature of all Api functions</description>
+    </getFunctions>
+    <getCurrencies type="application/json" name="Currencies">
+      <outparam type="int" order="1">currencyId</outparam>
+      <outparam type="string" order="2">name</outparam>   
+      <description>Function returns a list of available currencies</description>
+    </getCurrencies>
+    <getCountries type="application/json" name="Countries">
+      <outparam type="int" order="1">countryId</outparam>
+      <outparam type="string" order="2">name</outparam>   
+      <outparam type="string" order="3">countryCode</outparam> 
+      <outparam type="string" order="4">nameCyr</outparam> 
+      <outparam type="int" order="5">currencyId</outparam> 
+      <description>Function returns a list of available countries</description>
+    </getCountries>
+    <getRegions type="application/json" name="Regions">
+      <outparam type="int" order="1">countryId</outparam>
+      <outparam type="int" order="2">regionId</outparam>  
+      <outparam type="string" order="3">name</outparam> 
+      <outparam type="string" order="4">nameCyr</outparam> 
+      <outparam type="int" order="5">displayOrder</outparam> 
+      <outparam type="string" order="6" description="Other regions that correspond to current region">params</outparam> 
+      <description>Function returns a list of available regions</description>
+    </getRegions>
+    <getMeals type="application/json" name="Meals">
+      <outparam type="int" order="1">mealId</outparam>
+      <outparam type="string" order="2">mealCyr</outparam>  
+      <outparam type="array of int" order="3" description="Other available meal types that correspond to current meal type">params</outparam>  
+      <outparam type="string" order="4">countries</outparam> 
+      <description>Function returns a list of available meals</description>
+    </getMeals>
+    <getCategories type="application/json" name="Categories">
+      <outparam type="int" order="1">categoryId</outparam>
+      <outparam type="string" order="2">categoryText</outparam>  
+      <outparam type="array of int" order="3" description="countries ids' where this category is available">countries</outparam>  
+      <description>Function returns a list of available categories</description>
+    </getCategories>
+    <getHotels type="application/json" name="Hotels">
+      <inparam type="string" order="1">countryId</inparam>
+      <outparam type="int" order="1">countryId</outparam>
+      <outparam type="int" order="2">hotelId</outparam>  
+      <outparam type="string" order="3">name</outparam>  
+      <outparam type="int" order="4">categoryId</outparam> 
+      <outparam type="string" order="5">categoryDescription</outparam> 
+      <outparam type="int" order="6">regionId</outparam> 
+      <description>Function returns a list of available hotels for one or all countries</description>
+    </getHotels>
+    <getOperators type="application/json" name="Operators">
+      <outparam type="int" order="1">operatorId</outparam>
+      <outparam type="string" order="2">operatorName</outparam>  
+      <outparam type="array of int" order="3" description="ountries ids' where this operator works">params</outparam>  
+      <description>Function returns a list of available operators</description>
+    </getOperators>
+    <getResults type="application/json" name="Results">
+      <inparam  type="int" order="1">CountryKey</inparam>
+			<inparam  type="array of int" order="2">DestQryStr</inparam>
+			<inparam  type="date" order="3">BDate1</inparam>
+			<inparam  type="date" order="4">BDate2</inparam>
+			<inparam  type="int" order="5">DurationMin</inparam>
+			<inparam  type="int" order="6">DurationMax</inparam>
+			<inparam  type="int" order="7">AdQty</inparam>
+			<inparam  type="int" order="8">ChQty</inparam>
+			<inparam  type="int" order="9">FstChd</inparam>
+			<inparam  type="int" order="10">ScdChd</inparam>
+			<inparam  type="array of int" order="11">MealQryStr</inparam>
+			<inparam  type="array of int" order="12">CatQryStr</inparam>
+			<inparam  type="int" order="13">PriceMin</inparam>
+			<inparam  type="int" order="14">PriceMax</inparam>
+			<inparam  type="array of int" order="15">HotelQryString</inparam>
+			<inparam  type="array of int" order="16">OperQryStr</inparam>
+			<inparam  type="bool" order="17">airCharge</inparam>
+			<outparam type="string" order="1">Hotel</outparam>
+			<outparam type="string" order="2">CategoryDescription</outparam>
+			<outparam type="string" order="3">RoomType</outparam>
+			<outparam type="bool" order="4">airCharge</outparam>
+			<outparam type="int" order="5">priceRub</outparam>
+			<outparam type="date" order="6">BDate</outparam>
+			<outparam type="int" order="7">Duration</outparam>
+			<outparam type="string" order="8">MealDescription</outparam>
+			<outparam type="string" order="9">Destination</outparam>
+			<outparam type="int" order="10">HotelKey</outparam>
+			<outparam type="int" order="11">operPrice</outparam>
+			<outparam type="int" order="12">aircompany</outparam>
+			<outparam type="int" order="13">OperatorKey</outparam>
+			<outparam type="int" order="14">destinationKey</outparam>
+			<outparam type="string" order="15">onlineLink</outparam>
+			<outparam type="string" order="16">info</outparam>
+      <description>Function returns a list of search results</description>
+    </getResults>
+  </Functions>
+  <UsedData>
+  </UsedData>
+</Root>

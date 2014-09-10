@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://Microsoft.ServiceModel.Samples" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://Microsoft.ServiceModel.Samples" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Microsoft.ServiceModel.Samples/Imports">
+      <xsd:import schemaLocation="http://stosha:9999/ServiceModelSamples/Service?xsd=xsd0" namespace="http://Microsoft.ServiceModel.Samples" />
+      <xsd:import schemaLocation="http://stosha:9999/ServiceModelSamples/Service?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://stosha:9999/ServiceModelSamples/Service?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="http://stosha:9999/ServiceModelSamples/Service?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://stosha:9999/ServiceModelSamples/Service?xsd=xsd4" namespace="http://schemas.microsoft.com/Message" />
+      <xsd:import schemaLocation="http://stosha:9999/ServiceModelSamples/Service?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/travelShopWindowsService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITravelShop_getCountries_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCountries" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getCountries_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCountriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getDestinations_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDestinations" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getDestinations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDestinationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getHotels_InputMessage">
+    <wsdl:part name="parameters" element="tns:getHotels" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getHotels_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getHotelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getRoomTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:getRoomTypes" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getRoomTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getRoomTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getMealTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMealTypes" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getMealTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMealTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getOperators_InputMessage">
+    <wsdl:part name="parameters" element="tns:getOperators" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getOperators_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getOperatorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getSearchResponse_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getSearchResponse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSearchResponseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_startProcesses_InputMessage">
+    <wsdl:part name="parameters" element="tns:startProcesses" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_startProcesses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:startProcessesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getPlugins_InputMessage">
+    <wsdl:part name="parameters" element="tns:getPlugins" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getPlugins_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getPluginsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getStream_4_InputMessage">
+    <wsdl:part name="parameters" element="tns:getStream_4" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getStream_4_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getStream_4Response" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getStream_7_InputMessage">
+    <wsdl:part name="parameters" element="tns:getStream_7" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getStream_7_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getStream_7Response" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getState_InputMessage">
+    <wsdl:part name="parameters" element="tns:getState" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:getResult" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_getResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_runQuery_InputMessage">
+    <wsdl:part name="parameters" element="tns:runQuery" />
+  </wsdl:message>
+  <wsdl:message name="ITravelShop_runQuery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:runQueryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITravelShop">
+    <wsdl:operation name="getCountries">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getCountries" message="tns:ITravelShop_getCountries_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getCountriesResponse" message="tns:ITravelShop_getCountries_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDestinations">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getDestinations" message="tns:ITravelShop_getDestinations_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getDestinationsResponse" message="tns:ITravelShop_getDestinations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getHotels">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getHotels" message="tns:ITravelShop_getHotels_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getHotelsResponse" message="tns:ITravelShop_getHotels_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getRoomTypes">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getRoomTypes" message="tns:ITravelShop_getRoomTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getRoomTypesResponse" message="tns:ITravelShop_getRoomTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMealTypes">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getMealTypes" message="tns:ITravelShop_getMealTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getMealTypesResponse" message="tns:ITravelShop_getMealTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getOperators">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getOperators" message="tns:ITravelShop_getOperators_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getOperatorsResponse" message="tns:ITravelShop_getOperators_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSearchResponse">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getSearchResponse" message="tns:ITravelShop_getSearchResponse_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getSearchResponseResponse" message="tns:ITravelShop_getSearchResponse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="startProcesses">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/startProcesses" message="tns:ITravelShop_startProcesses_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/startProcessesResponse" message="tns:ITravelShop_startProcesses_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getPlugins">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getPlugins" message="tns:ITravelShop_getPlugins_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getPluginsResponse" message="tns:ITravelShop_getPlugins_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getStream_4">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getStream_4" message="tns:ITravelShop_getStream_4_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getStream_4Response" message="tns:ITravelShop_getStream_4_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getStream_7">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getStream_7" message="tns:ITravelShop_getStream_7_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getStream_7Response" message="tns:ITravelShop_getStream_7_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getState">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getState" message="tns:ITravelShop_getState_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getStateResponse" message="tns:ITravelShop_getState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getResult">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getResult" message="tns:ITravelShop_getResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/getResultResponse" message="tns:ITravelShop_getResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="runQuery">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/runQuery" message="tns:ITravelShop_runQuery_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ITravelShop/runQueryResponse" message="tns:ITravelShop_runQuery_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

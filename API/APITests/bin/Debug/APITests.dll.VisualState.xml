@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1002]D:\Programming\Projects\API\APITests\bin\Debug\APITests.dll</TopNode>
+  <SelectedNode>[0-1002]D:\Programming\Projects\API\APITests\bin\Debug\APITests.dll</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1002]D:\Programming\Projects\API\APITests\bin\Debug\APITests.dll" Expanded="true" />
+    <Node UniqueName="[0-1003]APITests" Expanded="true" />
+  </Nodes>
+</VisualState>

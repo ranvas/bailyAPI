@@ -294,6 +294,8 @@ namespace API
         string answer = "Должна быть вызвана функция: " + method;
         switch (methodName)
         {
+
+
           //возращается объект типа ApiResponse
           case "/getcountries":
             return getCountries();

@@ -10,7 +10,10 @@ namespace API
     /// </summary>
     interface IApiResponse
     {
-        public int ResponseCode;
+        int ResponseCode
+        {
+            get;
+        }
 
     }
 

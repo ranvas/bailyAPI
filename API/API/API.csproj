@@ -58,6 +58,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API.cs" />
+    <Compile Include="Classes\ApiResponse.cs" />
+    <Compile Include="Classes\ApiResponse\ApiElementsResponse\ApiCategoriesResponse.cs" />
+    <Compile Include="Classes\ApiResponse\ApiElementsResponse\ApiCountriesResponse.cs" />
+    <Compile Include="Classes\ApiResponse\ApiElementsResponse\ApiCurrenciesResponse.cs" />
+    <Compile Include="Classes\ApiResponse\ApiElementsResponse.cs" />
+    <Compile Include="Classes\ApiResponse\ApiElementsResponse\ApiHotelsResponse.cs" />
+    <Compile Include="Classes\ApiResponse\ApiElementsResponse\ApiMealsResponse.cs" />
+    <Compile Include="Classes\ApiResponse\ApiElementsResponse\ApiOperatorsResponse.cs" />
+    <Compile Include="Classes\ApiResponse\ApiElementsResponse\ApiRegionsResponse.cs" />
+    <Compile Include="Classes\ApiResponse\ApiElementsResponse\ApiResultsResponse.cs" />
+    <Compile Include="Classes\ApiResponse\ApiErrorResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\travelshop\Reference.cs">
       <AutoGen>True</AutoGen>

@@ -242,7 +242,7 @@ namespace API
 
     public static string hi()
     {
-      Thread.Sleep(90000);
+      Thread.Sleep(9000);
       return "hello";
     }
 

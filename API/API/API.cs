@@ -243,7 +243,7 @@ namespace API
     public static string hi()
     {
       Thread.Sleep(90000);
-      return "hi";
+      return "hello";
     }
 
     #endregion

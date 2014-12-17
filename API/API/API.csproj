@@ -58,7 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API.cs" />
-    <Compile Include="Classes\ApiResponse.cs" />
+    <Compile Include="Classes\IApiResponse.cs" />
     <Compile Include="Classes\ApiResponse\ApiElementsResponse\ApiCategoriesResponse.cs" />
     <Compile Include="Classes\ApiResponse\ApiElementsResponse\ApiCountriesResponse.cs" />
     <Compile Include="Classes\ApiResponse\ApiElementsResponse\ApiCurrenciesResponse.cs" />

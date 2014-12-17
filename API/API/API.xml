@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Root>
   <Functions>
-    <getFunctions type="text/xml" revision="2">
+    <getFunctions type="text/xml" revision="3">
       <inparam type="string" order="1">function</inparam>
       <description>Function returns xml signature of all Api functions</description>
     </getFunctions>
@@ -93,6 +93,7 @@
       <description>Function returns a list of search results</description>
     </getResults>
   </Functions>
-  <UsedData>
-  </UsedData>
+  
+	<connectionString name = "Data Source=stosha;User ID=mike;Password=mxlgrv"/>
+  
 </Root>

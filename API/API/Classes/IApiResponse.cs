@@ -8,13 +8,12 @@ namespace API
     /// <summary>
     /// Базовый класс при формировании ответа API
     /// </summary>
-    interface IApiResponse
+    public interface IApiResponse
     {
         int ResponseCode
         {
             get;
+            set;
         }
-
     }
-
 }

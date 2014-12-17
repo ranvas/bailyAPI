@@ -7,8 +7,14 @@ namespace API
 {
     class ApiErrorResponse : IApiResponse
     {
-        private string _errorMessage;
+        private object _errorMessage;
         private int _responseCode;
+
+        public ApiErrorResponse(string errorMessage, int code = 500)
+        {
+            ResponseCode = code;
+            Body = errorMessage;
+        }
 
         public int ResponseCode
         {
@@ -16,7 +22,7 @@ namespace API
             {
                 if (_responseCode == 0)
                 {
-                    _responseCode = 400;
+                    _responseCode = 500;
                 }
                 return _responseCode; 
             }
@@ -26,7 +32,7 @@ namespace API
             }
         }
 
-        public string ErrorMessage
+        public object Body
         {
             set
             {

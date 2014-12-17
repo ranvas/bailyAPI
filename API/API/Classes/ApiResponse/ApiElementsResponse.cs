@@ -8,8 +8,7 @@ namespace API
     abstract class ApiElementsResponse : IApiResponse
     {
         private int _responseCode;
-        private int _numberOfElements;
-
+        private int _countOfElements;
 
         public int ResponseCode
         {
@@ -27,15 +26,15 @@ namespace API
             }
         }
 
-        public int NumberOfElements
+        public int CountOfElements
         {
             set
             {
-                _numberOfElements = value;
+                _countOfElements = value;
             }
             get
             {
-                return _numberOfElements;
+                return _countOfElements;
             }
         }
 

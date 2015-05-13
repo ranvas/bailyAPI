@@ -100,24 +100,35 @@ namespace API
             {
                 if (Api._connectionString == null)
                 {
-                    //считать значение из реестра
-                    RegistryKey key = Registry.CurrentUser.CreateSubKey("baily");
-                    Api._connectionString = (string)key.GetValue("connectionString");
+                    //определить адрес XML-файла конфигурации
+                    string XMLFile = ApiXmlFilePath;
+                    XmlDocument doc = new XmlDocument();
+                    ////открыть XML-файл и считать строку подключения
+                    doc.Load(XMLFile);
+                    Api._connectionString = doc.SelectSingleNode(".//connectionString").Attributes["name"].Value;
                 }
                 return Api._connectionString;
             }
         }
+
         //файл настроек
         static string _apiXmlFilePath;
         public static string ApiXmlFilePath
         {
             get
             {
-                if (_apiXmlFilePath == null)
+                if (Api._apiXmlFilePath == null)
                 {
                     //считать значение из реестра
-                    RegistryKey key = Registry.CurrentUser.CreateSubKey("baily");
-                    Api._apiXmlFilePath = (string)key.GetValue("XML");
+                    RegistryKey key = Registry.LocalMachine.OpenSubKey("ListenerService");
+                    if (key != null)
+                    {
+                        Api._apiXmlFilePath = (string)key.GetValue("servicePath") + @"API.xml";
+                    }
+                    else
+                    {
+                        throw new Exception("Файл настроек не найден");
+                    }
                 }
                 return Api._apiXmlFilePath;
             }
@@ -555,7 +566,7 @@ namespace API
         /// Получаем из базы данных MsSql список доступных видов питания и их полей, которые потом оборачиваем в json и возвращаем
         /// </summary>
         /// <returns></returns>
-        public static IApiResponse getMeals(SqlCommand command, IList<string> args = null)
+        private static IApiResponse getMeals(SqlCommand command, IList<string> args = null)
         {
             command.CommandText = "SELECT * FROM searchForm_mealElements";
             SqlDataReader reader = command.ExecuteReader();
@@ -838,7 +849,7 @@ namespace API
         /// </summary>
         /// <param name="Args">Аргументы</param>
         /// <returns></returns>
-        public static XmlDocument getFunctions(IList<string> Args)
+        private static XmlDocument getFunctions(IList<string> Args)
         {
             string filename = ApiXmlFilePath;
             //Загрузка xml документа по нужному адресу   
@@ -850,12 +861,12 @@ namespace API
             //Если запрашивается список всех функций
             //if (Args.Count == 0)
             //{
-                //Получение списка всех узлов с тегом <Functions>
-                functions = doc.SelectSingleNode(".//Functions");
-                outDoc.LoadXml(functions.OuterXml);
+            //Получение списка всех узлов с тегом <Functions>
+            functions = doc.SelectSingleNode(".//Functions");
+            outDoc.LoadXml(functions.OuterXml);
             //}
             //Если в качестве параметров переданы названия не всех, а некоторых функций
-            
+
 
             return outDoc;
         }

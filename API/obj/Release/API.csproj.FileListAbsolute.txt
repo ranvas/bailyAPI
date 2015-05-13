@@ -1,0 +1,7 @@
+D:\programming\C#\bailyAPI\API\API\bin\Release\API.dll.config
+D:\programming\C#\bailyAPI\API\API\bin\Release\API.dll
+D:\programming\C#\bailyAPI\API\API\bin\Release\API.pdb
+D:\programming\C#\bailyAPI\API\API\bin\Release\Newtonsoft.Json.dll
+D:\programming\C#\bailyAPI\API\API\bin\Release\Newtonsoft.Json.xml
+D:\programming\C#\bailyAPI\API\API\obj\Release\API.dll
+D:\programming\C#\bailyAPI\API\API\obj\Release\API.pdb

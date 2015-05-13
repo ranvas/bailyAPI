@@ -10,5 +10,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
     <StartProgram>D:\Programming\Projects\TestPro\TestPro\bin\Release\TestPro.exe</StartProgram>
+    <StartWorkingDirectory>D:\programming\C#\listener\Listener\APItest\bin\Debug\</StartWorkingDirectory>
   </PropertyGroup>
 </Project>

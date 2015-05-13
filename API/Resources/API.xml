@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Root>
   <Functions>
-    <getFunctions type="text/xml" revision="3">
+    <getFunctions type="text/xml" revision="5">
       <inparam type="string" order="1">function</inparam>
       <description>Function returns xml signature of all Api functions</description>
     </getFunctions>
@@ -94,6 +94,6 @@
     </getResults>
   </Functions>
   
-	<connectionString name = "Data Source=stosha;User ID=mike;Password=mxlgrv"/>
+	<connectionString name = ""/>
   
 </Root>

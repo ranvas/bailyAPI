@@ -13,3 +13,13 @@ X:\random projects\bailyAPI\API\API\bin\Debug\Newtonsoft.Json.xml
 X:\random projects\bailyAPI\API\API\obj\Debug\API.csprojResolveAssemblyReference.cache
 X:\random projects\bailyAPI\API\API\obj\Debug\API.dll
 X:\random projects\bailyAPI\API\API\obj\Debug\API.pdb
+D:\programming\C#\bailyAPI\API\API\bin\Debug\API.dll.config
+D:\programming\C#\bailyAPI\API\API\bin\Debug\API.dll
+D:\programming\C#\bailyAPI\API\API\bin\Debug\API.pdb
+D:\programming\C#\bailyAPI\API\API\bin\Debug\Newtonsoft.Json.dll
+D:\programming\C#\bailyAPI\API\API\bin\Debug\Newtonsoft.Json.xml
+D:\programming\C#\bailyAPI\API\API\obj\Debug\API.dll
+D:\programming\C#\bailyAPI\API\API\obj\Debug\API.pdb
+D:\programming\C#\bailyAPI\API\API\obj\Debug\API.Properties.Resources.resources
+D:\programming\C#\bailyAPI\API\API\obj\Debug\API.csproj.GenerateResource.Cache
+D:\programming\C#\bailyAPI\API\API\obj\Debug\API.csprojResolveAssemblyReference.cache

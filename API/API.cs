@@ -120,7 +120,7 @@ namespace API
                 if (Api._apiXmlFilePath == null)
                 {
                     //считать значение из реестра
-                    RegistryKey key = Registry.LocalMachine.OpenSubKey("ListenerService");
+                    RegistryKey key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\ListenerService");
                     if (key != null)
                     {
                         Api._apiXmlFilePath = (string)key.GetValue("servicePath") + @"API.xml";

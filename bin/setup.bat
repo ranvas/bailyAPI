@@ -1,14 +1,26 @@
 @echo off
-rem ----сохраняем папку с dll в переменную
+rem ----сохранить папку с dll в переменную
 set dllName="%~dp0%API.dll"
 if exist %dllName% (
 echo API.dll exist
+goto gacutils
 rem echo %dllName%
 ) else (
-echo API.dll not exist
+echo search API.dll
+)
+rem найти dll в папке проекта
+set dllName="%~dp0..\API\bin\Debug\%API.dll"
+if exist %dllName% (
+echo API.dll exist
+goto gacutils
+rem echo %dllName%
+) else (
+echo API.dll not founded
 goto exit
 )
-rem ----узнаем путь к в реестре к значению пути gacutils
+
+:gacutils
+rem ----узнать путь к в реестре к значению пути gacutils
 set regkey = ""
 rem на разных версиях ОС по разному
 set query=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0
@@ -45,6 +57,6 @@ gacutil /i %dllname%
 pause
 
 
-:concat
-set registrekey=%registrekey% %%J
-goto :eof
+rem :concat
+rem set registrekey=%registrekey% %%J
+rem goto :eof

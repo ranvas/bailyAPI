@@ -27,6 +27,6 @@ gacutil /u %dllname%
 pause
 
 
-:concat
-set registrekey=%registrekey% %%J
-goto :eof
+rem :concat
+rem set registrekey=%registrekey% %%J
+rem goto :exit
